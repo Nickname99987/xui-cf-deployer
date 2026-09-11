@@ -2863,10 +2863,16 @@ def build_links(user_uuid: str, domain: str, routes: List[Dict[str, Any]]) -> Di
     base_url = f"https://zzz.ccvp.ccwu.cc/{user_uuid}/sub"
     common = {
         "domain": domain,
-        "epd": "yes",
-        "epi": "yes",
-        "egi": "no",
+        "epd": "no",
+        "epi": "no",
+        "egi": "yes",
+        "piu": "https://raw.githubusercontent.com/Nickname99987/iplist/refs/heads/main/cloudflare_ips.txt",
+        "ev": "no",
+        "ipv6": "no",
         "dkby": "yes",
+        "ech": "yes",
+        "customDNS": "https://dns.alidns.com/dns-query",
+        "customECHDomain": "cloudflare-ech.com",
     }
 
     links = {}
